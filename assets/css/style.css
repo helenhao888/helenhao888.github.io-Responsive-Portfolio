@@ -1,0 +1,224 @@
+/** {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+*/
+*{
+    margin:0;
+}
+html,body{
+    height:100%;
+    
+}
+
+#myname{
+    background-color:#4aaaa5;
+    font-weight:bold;
+    color:white;
+    float:left;
+    padding:10px;
+    margin-left:170px;
+  
+    height:50px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:32px;
+}
+
+h1{
+    font-size: 32px;
+    margin-top: auto;
+}
+
+
+.listname li{
+    float:right;
+    padding:10px;
+    list-style-type:none;
+    margin-right:20px;
+    margin-top:20px;
+}
+
+.llistname li:firstchild{
+    margin-right:160px;
+
+}
+
+.headlist{
+    margin-right:110px;
+    align-content:center;
+  
+}
+
+a:link{
+    color:blue;
+    }
+a:visited{
+    color:palevioletred;
+    }
+a:hover{
+    background-color:yellow;
+    
+}
+
+
+a:active{
+    color:red;
+}
+
+
+/*backgound color is used when background image is unavailable*/
+.wholebody{
+    
+    background-image: url("../images/interlaced.png");
+    background-color:#ffffff;
+ /*   padding:10px;*/
+    top: 75px;
+  /*  bottom:0; */
+    width: 100%; 
+  /*  position: absolute; */
+    overflow: auto;
+    min-height:100%;
+    margin-bottom:-40px;
+    font-family:"Arial', 'Helvetica Neue', Helvetica, sans-serif";
+     }
+     
+    
+h2{
+    font-family: "Georgia', Times, Times New Roman, serif";
+    color:#4aaaa5;
+}
+
+.bodydiv{
+background-color:#ffffff;
+padding:30px;
+position:relative;
+top:20px;
+bottom:20px;
+left:170px;
+width:900px;
+border-color:#dddddd;
+
+}
+
+.myimg{
+    float:left;
+    padding:30px;
+    height:150px;
+    width:150px;
+    
+}
+.maincontent{
+     
+     font-size:24px;
+     color:#777777;
+}
+
+/*contact page*/
+
+
+button:hover{
+    background-color:yellow;
+    
+}
+
+
+button:active{
+    color:red;
+}
+
+
+
+
+/*common*/
+.wholebody:after {
+    content:"";
+    display:block;
+  }
+  
+  .footer, .wholebody:after{
+    height:40px;
+  }
+
+.footer{
+       
+    clear: both;
+    background:#4aaaa5;
+    width: 100%;
+
+}
+
+.copyright{
+    background:grey;
+    color:white;
+    height:30px;
+    position:relative;
+    top:10px;
+    text-align:center;
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+}
+
+@media screen and (min-width: 769px){
+    #myname{
+        margin-left:30px; 
+        }
+    
+    .headlist{
+        margin-right:30px;
+    }
+    
+    .bodydiv{
+        width:70%;
+        left:30px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    #myname{
+        margin-left:30px; 
+        }
+    
+    .headlist{
+        margin-right:30px;
+    }
+    
+    .bodydiv{
+        width:90%;
+        left:30px;
+    }
+  
+    }
+
+@media screen and (max-width: 640px){
+
+#myname{
+    margin-left:30px; 
+    float:none;
+    width:100%;
+    margin-left: 0;
+    text-align: center;
+    }
+
+.headlist{
+    margin-right:0px;
+    float:left;
+    justify-content:center;
+}
+
+
+.bodydiv{
+    width:80%;
+    left:30px;
+}
+
+.myimg{
+    width:90%;
+    height:25%;
+}
+
+}

@@ -1,0 +1,281 @@
+/** {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+*/
+*{
+    margin:0;
+}
+html,body{
+    height:100%;
+    
+}
+
+#myname{
+    background-color:#4aaaa5;
+    font-weight:bold;
+    color:white;
+    float:left;
+    padding:10px;
+    margin-left:170px;   
+    height:50px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:32px;
+}
+
+h1{
+    font-size: 32px;
+    margin-top: auto;
+}
+
+
+.listname li{
+    float:right;
+    padding:10px;
+    list-style-type:none;
+    margin-right:20px;
+    margin-top:20px;
+}
+
+.listname li:firstchild{
+    margin-right:160px;
+
+}
+
+.headlist{
+    margin-right:110px;
+    align-content:center;
+  
+}
+
+a:link{
+    color:blue;
+    }
+a:visited{
+    color:palevioletred;
+    }
+a:hover{
+    background-color:yellow;
+    
+}
+
+
+a:active{
+    color:red;
+}
+
+
+
+/*backgound color is used when background image is unavailable*/
+.wholebody{
+    
+    background-image: url("../images/interlaced.png");
+    background-color:#ffffff;
+    top: 15px;
+    width: 100%; 
+    overflow: auto;
+    min-height:100%;
+    margin-bottom:-30px;
+    font-family:"Arial', 'Helvetica Neue', Helvetica, sans-serif";
+     }
+     
+    
+h2{
+    font-family: "Georgia', Times, Times New Roman, serif";
+    color:#4aaaa5;
+}
+
+.bodydiv{
+background-color:#ffffff;
+padding:30px;
+position:relative;
+top:10px;
+/*bottom:10px;*/
+left:170px;
+width:900px;
+
+border-color:#dddddd;
+
+}
+
+
+.maincontent{
+    width:90%;
+}
+
+
+
+
+/*portfolio page*/
+.row{
+    margin:8px -16px;
+}
+
+.row, 
+.row> .column
+{
+    padding:4px 8px;
+}
+
+.column{
+    float:left;
+    width:45%;
+    margin:8px;
+}
+
+/*clear floats after rows*/
+.row::after{
+    content: "";
+    display:table;
+    clear:both;
+}
+
+.content{
+    background-color:white;
+    padding:5px;
+    width:370px;
+ }
+
+.hthree{
+    background-color:#4aaaa5;
+    color:white;
+    position:relative;
+    margin-top:-35px;
+    text-align:center;
+ 
+}
+
+.img{
+    height:250px;
+    width:370px;
+}
+
+/*common*/
+.wholebody:after {
+    content:"";
+    display:block;
+  }
+  
+  .footer, .wholebody:after{
+    height:40px;
+  }
+
+.footer{
+    
+
+    clear: both;
+    background:#4aaaa5;
+ 
+    width: 100%;
+
+}
+
+.copyright{
+    background:grey;
+    color:white;
+    height:30px;
+    position:relative;
+    top:10px;
+    text-align:center;
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+}
+
+@media screen and (max-width: 980px){
+    #myname{
+        margin-left:30px; 
+        }
+    
+    .headlist{
+        margin-right:30px;
+    }
+    
+    .bodydiv{
+        width:70%;
+        left:30px;
+    }
+    .column{
+        float:left;
+        width:40%;
+        margin:8px;
+    }
+    
+    .img{
+        height:25%;
+        width:100%;
+    }
+    
+    .content{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #myname{
+        margin-left:30px; 
+        }
+    
+    .headlist{
+        margin-right:30px;
+    }
+    
+    .bodydiv{
+        width:90%;
+        left:30px;
+    }
+    .column{
+        float:left;
+        width:40%;
+        margin:8px;
+    }
+    
+    .img{
+        height:25%;
+        width:100%;
+    }
+    
+    .content{
+        width:100%;
+    }
+    }
+
+@media screen and (max-width: 640px){
+
+#myname{
+    margin-left:30px; 
+    float:none;
+    width:100%;
+    margin-left: 0;
+    text-align: center;
+    }
+
+.headlist{
+    margin-right:0px;
+    float:left;
+    justify-content:center;
+}
+
+
+.bodydiv{
+    width:80%;
+    left:30px;
+}
+.column{
+    float:left;
+    width:90%;
+    margin:8px;
+}
+
+.img{
+    height:25%;
+    width:100%;
+}
+
+.content{
+    width:100%;
+}
+}
